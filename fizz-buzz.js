@@ -6,14 +6,18 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.*/
 
 for (let i = 1; i < 101; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-    console.log('fizzbuzz')
+      document.getElementById("risultato").innerHTML += `<div>fizzBuzz</div>`;
+    
   } else if (i % 5 === 0) {
-    console.log('buzz')
+    document.getElementById("risultato").innerHTML += `<div>buzz</div>`;
+    
   } else if (i % 3 === 0) {
+    document.getElementById("risultato").innerHTML += `<divfizz</div>`;
     console.log('fizz')
-  } 
-
+  } else {
     document.getElementById("risultato").innerHTML += `<div>${i}</div>`;
-    console.log (i)
+  }
+    
+  
 }
 
